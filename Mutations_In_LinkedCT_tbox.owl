@@ -1,0 +1,595 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#"
+     xml:base="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#belongs_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#belongs_to">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Eligibility_Criteria"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Trial"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#contains_mutation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#contains_mutation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Phrase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Type"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_abbrev -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_abbrev">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Abbrev"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Regular_Notation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_armband -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_armband">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Armband"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Regular_Notation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_chrom_1 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_chrom_1">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Chromosome"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Regular_Notation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_chrom_2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_chrom_2">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Chromosome"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Regular_Notation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_context -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_context">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Context_Phrase"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Phrase"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#metadata_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_context_phrase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_context_phrase">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#metadata_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_excl_crit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_excl_crit">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_external_reference -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_external_reference">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Phrase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Real_World_Reference"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_incl_crit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_incl_crit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Eligibility_Criteria"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Inclusion_Criteria"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_mutation_phrase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_mutation_phrase">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Eligibility_Criteria"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Phrase"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_notation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_notation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Notation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_sense -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_sense">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Context"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Context_Sense"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#metadata_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#is_contained_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#is_contained_in">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Phrase"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Type"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#contains_mutation"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#is_mutation_phrase_for -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#is_mutation_phrase_for">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Eligibility_Criteria"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Phrase"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_mutation_phrase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#metadata_property -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#metadata_property"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#occurs_in_doc -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#occurs_in_doc">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Document"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#metadata_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#occurs_in_sentence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#occurs_in_sentence">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#metadata_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has3LetterFormat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has3LetterFormat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Point_Mutation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#hasLinkedCT_URI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#hasLinkedCT_URI">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Trial"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#hasMutantResidue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#hasMutantResidue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Point_Mutation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#hasMutation_Label -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#hasMutation_Label">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Type"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#hasWildTypeResidue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#hasWildTypeResidue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Point_Mutation"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_Path -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_Path">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Document"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_content -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_content">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_critID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_critID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Eligibility_Criteria"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_crit_text -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_crit_text">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Eligibility_Criteria"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_mutation_phraseID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_mutation_phraseID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Phrase"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Abbrev -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Abbrev">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Domain_Features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Context -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Context">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Features -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Features"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Text -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Text">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Armband -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Armband">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Domain_Features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Char_Offset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Char_Offset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Char_Offset_End -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Char_Offset_End">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Char_Offset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Char_Offset_Start -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Char_Offset_Start">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Char_Offset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Chromosome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Chromosome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Domain_Features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Complex -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Complex">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Irregular_Notation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Context_Phrase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Context_Phrase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Context_Sense -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Context_Sense">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Deletion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Deletion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Regular_Notation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Document -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Document">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Domain_Features -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Domain_Features"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Duplication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Duplication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Irregular_Notation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Eligibility_Criteria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Eligibility_Criteria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Domain_Features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Exclusion_Criteria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Exclusion_Criteria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Eligibility_Criteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Inclusion_Criteria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Inclusion_Criteria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Eligibility_Criteria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Inversion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Inversion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Regular_Notation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Irregular_Notation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Irregular_Notation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Notation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Phrase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Phrase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Domain_Features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Domain_Features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Irregular_Notation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Irregular_Notation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Regular_Notation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Regular_Notation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Notation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Notation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Domain_Features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Point_Mutation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Point_Mutation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Regular_Notation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Real_World_Reference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Real_World_Reference"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Regular_Notation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Regular_Notation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Notation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Translocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Translocation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Regular_Notation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Trial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Trial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Domain_Features"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Trisomy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Trisomy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Irregular_Notation"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#">
+  <owl:Ontology rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Irregular_Notation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Notation"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Trisomy">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Irregular_Notation"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Point_Mutation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Regular_Notation"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Char_Offset_End">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Char_Offset"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Armband">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Domain_Features"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Complex">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Irregular_Notation"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Abbrev">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Domain_Features"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Char_Offset_Start">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Char_Offset"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Char_Offset">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Features"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Document">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Features"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Context_Phrase">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Features"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Trial">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Domain_Features"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Text">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Features"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Phrase">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Domain_Features"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Type">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Domain_Features"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Context_Sense">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Features"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Exclusion_Criteria">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Eligibility_Criteria"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Translocation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Regular_Notation"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Real_World_Reference"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Duplication">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Irregular_Notation"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Deletion">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Regular_Notation"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Irregular_Notation">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Type"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Chromosome">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Domain_Features"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Notation">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Domain_Features"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Eligibility_Criteria">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Domain_Features"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Inclusion_Criteria">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Eligibility_Criteria"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Features"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Regular_Notation">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Notation"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Regular_Notation">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Type"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Inversion">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_With_Regular_Notation"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Context">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Features"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#metadata_property"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#contains_mutation">
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    </rdfs:subPropertyOf>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Type"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Phrase"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_notation">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Notation"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Type"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_excl_crit">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_context_phrase">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#metadata_property"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#occurs_in_doc">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#metadata_property"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Document"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_chrom_2">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Regular_Notation"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Chromosome"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_mutation_phrase">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Phrase"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Eligibility_Criteria"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_chrom_1">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Regular_Notation"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Chromosome"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_incl_crit">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Inclusion_Criteria"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Eligibility_Criteria"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#occurs_in_sentence">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#metadata_property"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Type"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_armband">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Regular_Notation"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Armband"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_context">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#metadata_property"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Phrase"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Context_Phrase"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_external_reference">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Real_World_Reference"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Phrase"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#belongs_to">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Trial"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Eligibility_Criteria"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#is_contained_in">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#contains_mutation"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Type"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Phrase"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_abbrev">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Regular_Notation"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Abbrev"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_sense">
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#metadata_property"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Context_Sense"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Annotation_Context"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#is_mutation_phrase_for">
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_mutation_phrase"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#domain_property"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Phrase"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Eligibility_Criteria"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#hasWildTypeResidue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Point_Mutation"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#hasLinkedCT_URI">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Trial"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_critID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Eligibility_Criteria"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_content">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_mutation_phraseID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Phrase"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_Path">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Document"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#hasMutantResidue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Point_Mutation"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has3LetterFormat">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Point_Mutation"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#hasMutation_Label">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Mutation_Type"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#has_crit_text">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Eligibility_Criteria"/>
+  </owl:DatatypeProperty>
+  <Exclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct01420926">
+    <belongs_to>
+      <Trial rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct01420926">
+        <hasLinkedCT_URI>http://data.linkedct.org/data/trial/nct01420926</hasLinkedCT_URI>
+      </Trial>
+    </belongs_to>
+    <has_crit_text></has_crit_text>
+    <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct01420926</has_critID>
+  </Exclusion_Criteria>
+  <Exclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct00185679">
+    <belongs_to>
+      <Trial rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct00185679">
+        <hasLinkedCT_URI>http://data.linkedct.org/data/trial/nct00185679</hasLinkedCT_URI>
+      </Trial>
+    </belongs_to>
+    <has_crit_text> 4.2. Recipient Exclusion Criteria 4.2.1. The recipient is a suitable candidate for autologous transplantation. 4.2.2. Participation in other clinical trials which involve investigational drugs or devices that might influence the endpoints of this study 4.2.3. Evidence of active hepatitis or cirrhosis 4.2.4. HIV positive 4.2.5. History of invasive aspergillosis; presence of any other active, uncontrolled bacterial, viral or fungal infection 4.2.6. Uncontrolled CNS involvement 4.2.7. Documented allergy to murine proteins or iron dextran 4.2.8. The recipient is a lactating female or, if of child-bearing potential, is unwilling to implement adequate birth control. 4.2.9. The recipient has a medical problem or neurologic/psychiatric dysfunction which would impair his/her ability to be compliant with the medical regimen and to tolerate transplantation or would prolong hematologic recovery which in the opinion of the principal investigator would place the recipient at unacceptable risk. 4.3. Donor Inclusion Criteria The donor must be examined and have specific tests performed according to existing institutional guidelines to evaluate his/her candidacy as a donor including the following: 4.3.1. Age &lt; 60 years and weight greater than 25 kg. 4.3.2. Medical history and physical examination confirm good health status as defined by institutional standards 4.3.3. Seronegative for HIV Ag, HIV 1+2 Ab, HTLV I/II Ab, HBsAg, HBcAb (IgM and IgG), HCV Ab, RPR for syphilis within 30 days of apheresis collection 4.3.4. Genotypically haploidentical as determined by HLA typing 4.3.5. Female donors of child-bearing potential must have a negative serum or urine beta-HCG test within three weeks of mobilization 4.3.6. Capable of undergoing leukapheresis, have adequate venous access, and be willing to undergo insertion of a central catheter should leukapheresis via peripheral vein be inadequate 4.3.7. Agreeable to second donation of PBPC (or a bone marrow harvest) should the patient fail to demonstrate sustained engraftment following the transplant. 4.3.8. The donor, or legal guardian greater than 18 years of age, must have been informed of the investigational nature of this study and have signed a consent form in accordance with Federal Guidelines and the guidelines of the Stanford IRB. 4.3.9. The prospective donor will be screened for CMV seroreactivity and a seronegative donor will be utilized if available when the patient is seronegative. Otherwise the donor will be selected on the ability of NK cell alloreactivity based upon HLA typing results and donors who are capable of NK cell alloreactivity will be used preferentially. Exclusion Criteria:4.2. Recipient Exclusion Criteria 4.2.1. The recipient is a suitable candidate for autologous transplantation. 4.2.2. Participation in other clinical trials which involve investigational drugs or devices that might influence the endpoints of this study 4.2.3. Evidence of active hepatitis or cirrhosis 4.2.4. HIV positive 4.2.5. History of invasive aspergillosis; presence of any other active, uncontrolled bacterial, viral or fungal infection 4.2.6. Uncontrolled CNS involvement 4.2.7. Documented allergy to murine proteins or iron dextran 4.2.8. The recipient is a lactating female or, if of child-bearing potential, is unwilling to implement adequate birth control. 4.2.9. The recipient has a medical problem or neurologic/psychiatric dysfunction which would impair his/her ability to be compliant with the medical regimen and to tolerate transplantation or would prolong hematologic recovery which in the opinion of the principal investigator would place the recipient at unacceptable risk. 4.4. Donor Exclusion Criteria 4.4.1. Evidence of active infection (including urinary tract infection, or upper respiratory tract infection) or hepatitis (on screening ) 4.4.2. Medical, physical or psychological reason which makes the donor unlikely to tolerate or cooperate with growth factor therapy and leukapheresis. 4.4.3. Factors which place the donor at increased risk for complications from leukapheresis or G-CSF therapy. 4.4.4. Lactating female or, if of child-bearing potential, is unwilling to implement adequate birth control. 4.4.5. HIV positive. </has_crit_text>
+    <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct00185679</has_critID>
+  </Exclusion_Criteria>
+  <Exclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct00112723">
+    <belongs_to>
+      <Trial rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct00112723">
+        <hasLinkedCT_URI>http://data.linkedct.org/data/trial/nct00112723</hasLinkedCT_URI>
+      </Trial>
+    </belongs_to>
+    <has_crit_text></has_crit_text>
+    <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct00112723</has_critID>
+  </Exclusion_Criteria>
+  <Document rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Doc_nct01420926">
+    <has_Path>C:\Users\m128320\Documents\Research\LinkedCTWithMutationMentions\LeukemiaTrials\Trial_106.txt</has_Path>
+  </Document>
+  <Inclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct00039130">
+    <belongs_to>
+      <Trial rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct00039130">
+        <hasLinkedCT_URI>http://data.linkedct.org/data/trial/nct00039130</hasLinkedCT_URI>
+      </Trial>
+    </belongs_to>
+    <has_crit_text></has_crit_text>
+    <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct00039130</has_critID>
+  </Inclusion_Criteria>
+  <Exclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct00039130">
+    <belongs_to rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct00039130"/>
+    <has_crit_text></has_crit_text>
+    <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct00039130</has_critID>
+  </Exclusion_Criteria>
+  <Inclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct02126553">
+    <belongs_to>
+      <Trial rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct02126553">
+        <hasLinkedCT_URI>http://data.linkedct.org/data/trial/nct02126553</hasLinkedCT_URI>
+      </Trial>
+    </belongs_to>
+    <has_crit_text> Inclusion Criteria: 1. Patients aged 18 to 55 years with high risk (as defined in #2) AML who have achieved their FIRST CR or CRi within 12 months of enrollment and are not immediately candidates for allogeneic stem cell transplant. Patients above age 55 who are not eligible for other protocols may be considered for enrollment on a case by case basis after discussion with the PI. 2. 2. Patients in their FIRST CR or CRi may be eligible for enrollment only if they have a high risk feature, including, but not limited to: adverse karyotype, FLT3 mutation, history of antecedent hematologic disorder (AHD), presence of dysplasia in the bone marrow, therapy-related AML, history of requiring more than 1 cycle of intensive induction chemotherapy to achieve first remission, or presence of persistent minimal residual disease (detected by cytogenetics, molecular markers, or flow cytometry) at any point after initial induction cycle. Patients aged &gt; or = 18 years with AML who have achieved a SECOND CR or CRi within 12 months of enrollment and are not immediately candidates for allogeneic stem cell transplant are also eligible. 3. Patients should have received induction chemotherapy for AML and at least 1 consolidation. 4. Patients with history of extramedullary AML, except for CNS involvement that is currently controlled, will not be eligible for enrollment. 5. ECOG performance status of &lt; or = 3 6. Adequate organ function as follows: a. Serum total bilirubin &lt; or = to 1.5 X the Upper Limit of Normal (ULN) b. Serum creatinine &lt; or = to 2.5 x ULN 7. Adequate BM reserve: a. Absolute neutrophil count (ANC) &gt; 0.5 x 109/L b. Platelet count &gt; or = 30 x 109/L 8. For females of childbearing age, they may participate it they: a. Have a negative serum or urine pregnancy test within 10 to 14 days of enrolling (A second pregnancy test will be performed within 24hrs of starting therapy and both negative pregnancy tests will be required for starting therapy.) b. Agree to either abstinence or 2 effective contraceptive methods throughout the treatment period and up to 28 days after discontinuing treatment. 9. For male patients with a female partner of childbearing age, they may participate if they agree to either abstinence or 2 effective contraceptive methods throughout the treatment period and up to 28 days after discontinuing treatment. 10. All study participants be willing and able to comply with the requirements of the REMS® program. 11. Females of reproductive potential must adhere to the scheduled pregnancy testing as required in the Revlimid REMS® program. 12. Ability to understand and sign informed consent.</has_crit_text>
+    <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct02126553</has_critID>
+  </Inclusion_Criteria>
+  <Exclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct00534430">
+    <belongs_to>
+      <Trial rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct00534430">
+        <hasLinkedCT_URI>http://data.linkedct.org/data/trial/nct00534430</hasLinkedCT_URI>
+      </Trial>
+    </belongs_to>
+    <has_crit_text></has_crit_text>
+    <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct00534430</has_critID>
+  </Exclusion_Criteria>
+  <Inclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct01420926">
+    <belongs_to rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct01420926"/>
+    <has_crit_text></has_crit_text>
+    <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct01420926</has_critID>
+  </Inclusion_Criteria>
+  <Inclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct00932412">
+    <belongs_to>
+      <Trial rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct00932412">
+        <hasLinkedCT_URI>http://data.linkedct.org/data/trial/nct00932412</hasLinkedCT_URI>
+      </Trial>
+    </belongs_to>
+    <has_crit_text> Inclusion Criteria: 1. Age 18 years or more and less than 60 years 2. With: A morphologically proven diagnosis of AML according to the WHO classification, cytogenetically (standard karyotype, FISH-MLL) and molecularly (FLT3, CEBPA, NMP1) defined. 3. ECOG performance status 0 to 2. 4. Have adequate renal and hepatic function as indicated by the following laboratory values: ~ Creatinine clearance (calculated by the cockcroft and Gault method) ? 40mL/min; ~ AST and ALT &lt; or = 2.5N; total bilirubin &lt; or = 2N (unless related to the underlying disease). 5. Cardiac function determined by radionuclide or echography within normal limits. 6. Women of child-bearing potential (i.e. women who are pre-menopausal or not surgically sterile) must use acceptable contraceptive methods, and must have a negative serum or urine pregnancy test within 2 weeks prior the beginning treatment on this trial. 7. Must be able and willing to give written informed consent. 8. The subject must be covered by a social security system.</has_crit_text>
+    <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct00932412</has_critID>
+  </Inclusion_Criteria>
+  <Document rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Doc_nct00534430">
+    <has_Path>C:\Users\m128320\Documents\Research\LinkedCTWithMutationMentions\LeukemiaTrials\Trial_1.txt</has_Path>
+  </Document>
+  <Document rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Doc_nct00039130">
+    <has_Path>C:\Users\m128320\Documents\Research\LinkedCTWithMutationMentions\LeukemiaTrials\Trial_101.txt</has_Path>
+  </Document>
+  <Inclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct00534430">
+    <belongs_to rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct00534430"/>
+    <has_crit_text></has_crit_text>
+    <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct00534430</has_critID>
+  </Inclusion_Criteria>
+  <Inclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct00853008">
+    <belongs_to>
+      <Trial rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct00853008">
+        <hasLinkedCT_URI>http://data.linkedct.org/data/trial/nct00853008</hasLinkedCT_URI>
+      </Trial>
+    </belongs_to>
+    <has_crit_text> Inclusion Criteria: ~ High risk ALL adult patients (age&gt; 15 years)no treated previously ~ High-risk ALL: ~ One or more of the following: ~ Age 30-60 yr. ~ WBC count &gt;25x109/L ~ 11q23 or ALL1/AF4 ~ Very high-risk ALL: ~ HR ALL and one or the following: ~ Slow cytologic response (&gt;10% blasts in BM on d14 of induction therapy). ~ MRD&gt;0.05% (by flow cytometry) at the end of consolidation</has_crit_text>
+    <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct00853008</has_critID>
+  </Inclusion_Criteria>
+  <Exclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct01066663">
+    <belongs_to>
+      <Trial rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct01066663">
+        <hasLinkedCT_URI>http://data.linkedct.org/data/trial/nct01066663</hasLinkedCT_URI>
+      </Trial>
+    </belongs_to>
+    <has_crit_text> Exclusion Criteria: ~ Chemotherapy or radiotherapy within 3 weeks prior to entering the study or those who have not recovered from clinically significant adverse events due to agents administered more than 3 weeks earlier. ~ May not be receiving any other study agents ~ Known CNS involvement with CLL ~ History of allergic reactions or sensitivity to pyrimethamine ~ Patients taking folic acid are eligible if the folic acid is discontinued prior to pyrimethamine administration and not taken for the duration of time enrolled on this study ~ Prior allogeneic SCT is an exclusion only if the subject has active graft vs. host disease or requires immunosuppression other than a constant stable dose of glucocorticoids ~ Uncontrolled intercurrent illness ~ Pregnant or breastfeeding women ~ HIV-positive individuals on combination antiretroviral therapy </has_crit_text>
+    <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct01066663</has_critID>
+  </Exclusion_Criteria>
+  <Mutation_Phrase rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_excl_nct02126553">
+    <contains_mutation>
+      <Inversion rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#INV_14">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_excl_nct02126553"/>
+        <occurs_in_sentence>
+          <Sentence rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence1">
+            <occurs_in_doc>
+              <Document rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Doc_nct01066663">
+                <has_Path>C:\Users\m128320\Documents\Research\LinkedCTWithMutationMentions\LeukemiaTrials\Trial_105.txt</has_Path>
+              </Document>
+            </occurs_in_doc>
+            <has_content> Diagnosed with CLL/SLL based on the standard histologic and immunophenotypic criteria described in the WHO classification of lymphoid malignancies, including immunophenotypic confirmation that the tumor cells co-express B cell antigens CD19/20 and CD5. Mantle cell lymphoma should be excluded based on positive staining of the tumor cells for CD23, or the absence of staining of the tumor cells for cyclin D1 or the absence of t(11;14). This diagnosis should be confirmed at a Dana-Farber/Harvard Cancer Center institution within approximately one month after the subject is registered. </has_content>
+            <occurs_in_doc>
+              <Document rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Doc_nct00185679">
+                <has_Path>C:\Users\m128320\Documents\Research\LinkedCTWithMutationMentions\LeukemiaTrials\Trial_104.txt</has_Path>
+              </Document>
+            </occurs_in_doc>
+            <has_content>5,-7, t(6;9), tri8,</has_content>
+            <occurs_in_doc>
+              <Document rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Doc_nct02126553">
+                <has_Path>C:\Users\m128320\Documents\Research\LinkedCTWithMutationMentions\LeukemiaTrials\Trial_102.txt</has_Path>
+              </Document>
+            </occurs_in_doc>
+            <has_content> M3 by FAB classification based on morphology, immunophenotype, molecular, or cytogenetic s studies. 2. Diagnosis of AML associated with the following karyotypes: inv(16), t(16;16), t(8;21), t(15;17), or t(9;22) 3. Uncontrolled intercurrent illness including, but not limited to ongoing or active uncontrolled infection, symptomatic congestive heart failure, unstable angina pectoris, cardiac arrhythmia, or psychiatric illness/social situations that would limit compliance with study requirements. 4. Previous treatment with lenalidomide for AML. 5. Patients with documented hypersensitivity to any components of the study program. 6. Females who are pregnant. 7. Patients with active CNS disease. </has_content>
+            <occurs_in_doc>
+              <Document rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Doc_nct00853008">
+                <has_Path>C:\Users\m128320\Documents\Research\LinkedCTWithMutationMentions\LeukemiaTrials\Trial_10.txt</has_Path>
+              </Document>
+            </occurs_in_doc>
+            <has_content> L3 ALL or B mature(sIg +) or t(8;14), t(2;8), t(8;22). </has_content>
+          </Sentence>
+        </occurs_in_sentence>
+        <hasMutation_Label>inv(16)</hasMutation_Label>
+      </Inversion>
+    </contains_mutation>
+    <contains_mutation>
+      <Translocation rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_13">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_excl_nct02126553"/>
+        <occurs_in_sentence rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence1"/>
+        <hasMutation_Label>t(9;22) </hasMutation_Label>
+      </Translocation>
+    </contains_mutation>
+    <contains_mutation>
+      <Translocation rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_12">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_excl_nct02126553"/>
+        <occurs_in_sentence rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence1"/>
+        <hasMutation_Label>t(15;17)</hasMutation_Label>
+      </Translocation>
+    </contains_mutation>
+    <contains_mutation>
+      <Translocation rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_11">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_excl_nct02126553"/>
+        <occurs_in_sentence rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence1"/>
+        <hasMutation_Label>t(8;21)</hasMutation_Label>
+      </Translocation>
+    </contains_mutation>
+    <contains_mutation>
+      <Translocation rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_10">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_excl_nct02126553"/>
+        <occurs_in_sentence rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence1"/>
+        <hasMutation_Label>t(16;16)</hasMutation_Label>
+      </Translocation>
+    </contains_mutation>
+    <is_mutation_phrase_for>
+      <Exclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct02126553">
+        <belongs_to rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct02126553"/>
+        <has_crit_text> Exclusion Criteria: 1. Diagnosis of acute promyelocytic leukemia (APL), AML~ M3 by FAB classification based on morphology, immunophenotype, molecular, or cytogenetic s studies. 2. Diagnosis of AML associated with the following karyotypes: inv(16), t(16;16), t(8;21), t(15;17), or t(9;22) 3. Uncontrolled intercurrent illness including, but not limited to ongoing or active uncontrolled infection, symptomatic congestive heart failure, unstable angina pectoris, cardiac arrhythmia, or psychiatric illness/social situations that would limit compliance with study requirements. 4. Previous treatment with lenalidomide for AML. 5. Patients with documented hypersensitivity to any components of the study program. 6. Females who are pregnant. 7. Patients with active CNS disease. </has_crit_text>
+        <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct02126553</has_critID>
+      </Exclusion_Criteria>
+    </is_mutation_phrase_for>
+  </Mutation_Phrase>
+  <Mutation_Phrase rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_excl_nct00932412">
+    <contains_mutation>
+      <Inversion rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#INV_17">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_excl_nct00932412"/>
+        <occurs_in_sentence>
+          <Sentence rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence0">
+            <occurs_in_doc>
+              <Document rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Doc_nct00932412">
+                <has_Path>C:\Users\m128320\Documents\Research\LinkedCTWithMutationMentions\LeukemiaTrials\Trial_103.txt</has_Path>
+              </Document>
+            </occurs_in_doc>
+            <has_content>Exclusion Criteria: 1. Patients with AML with favorable risk cytogenetics: M3-AML; CBF-AML including t(8:21), inv(16), or t(16;16) AML. 2. Ph-positive AML. 3. AML following diagnosed myeloproliferation or patient with prior history of MDS known for more than 3 months 4. Prior treatment with chemotherapy or radiotherapy for another tumor. 5. Prior tumor, if not stable for at least two years, except in-situ carcinoma and skin carcinoma 6. Compromised organ function judged to be lifethreatening by the Investigator. 7. Positive serology for HIV, HBV and HBC (except post vaccination) 8. Uncontrolled active infection of any kind or bleeding. Patients with infections who are under active treatment with antibiotics and whose infections are controlled may be entered to the study. 9. Other active malignancy. 10. Patients concurrently receiving any other standard or investigational treatment for their leukemia, with the exception of hydroxyurea. </has_content>
+          </Sentence>
+        </occurs_in_sentence>
+        <hasMutation_Label>inv(16)</hasMutation_Label>
+      </Inversion>
+    </contains_mutation>
+    <contains_mutation>
+      <Translocation rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_16">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_excl_nct00932412"/>
+        <occurs_in_sentence rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence0"/>
+        <hasMutation_Label>t(16;16) </hasMutation_Label>
+      </Translocation>
+    </contains_mutation>
+    <contains_mutation>
+      <Translocation rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_15">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_excl_nct00932412"/>
+        <occurs_in_sentence rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence0"/>
+        <hasMutation_Label>t(8:21)</hasMutation_Label>
+      </Translocation>
+    </contains_mutation>
+    <is_mutation_phrase_for>
+      <Exclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct00932412">
+        <belongs_to rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct00932412"/>
+        <has_crit_text> Exclusion Criteria: 1. Patients with AML with favorable risk cytogenetics: M3-AML; CBF-AML including t(8:21), inv(16), or t(16;16) AML. 2. Ph-positive AML. 3. AML following diagnosed myeloproliferation or patient with prior history of MDS known for more than 3 months 4. Prior treatment with chemotherapy or radiotherapy for another tumor. 5. Prior tumor, if not stable for at least two years, except in-situ carcinoma and skin carcinoma 6. Compromised organ function judged to be lifethreatening by the Investigator. 7. Positive serology for HIV, HBV and HBC (except post vaccination) 8. Uncontrolled active infection of any kind or bleeding. Patients with infections who are under active treatment with antibiotics and whose infections are controlled may be entered to the study. 9. Other active malignancy. 10. Patients concurrently receiving any other standard or investigational treatment for their leukemia, with the exception of hydroxyurea. </has_crit_text>
+        <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct00932412</has_critID>
+      </Exclusion_Criteria>
+    </is_mutation_phrase_for>
+  </Mutation_Phrase>
+  <Mutation_Phrase rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_incl_nct00185679">
+    <contains_mutation>
+      <Translocation rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_20">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_incl_nct00185679"/>
+        <occurs_in_sentence>
+          <Sentence rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence2">
+            <occurs_in_doc rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Doc_nct00185679"/>
+            <has_content>11 and ALL with Phil+ t(9;22),(q34;q11.2), and t(4:11)(q21;23) 4.1.1.3. Chronic myelogenous leukemia (accelerated, second chronic phase) 4.1.1.4. Myelodysplastic syndrome (in high and high intermediate risk categories) 4.1.1.5. Non-Hodgkin's lymphoma ) 4.1.1.6. Refractory CLL 4.1.2. The recipient must be &lt; 50 years old at time of registration. 4.1.3. The recipient must have a related donor genotypically HLA-A, B,C and DRB1, DQ loci haploidentical to the recipient (but differing for 2-3 HLA alleles on the unshared haplotype in the GvHD direction) and no HLA matched sibling or matched unrelated donor is identified. 4.1.4. Recovery from prior therapy, chemotherapy, or radiotherapy, as defined by: 4.1.4.1. ECOG performance status &lt; 2 4.1.5. Adequate cardiac and pulmonary function (LVEF &gt; 45%, DLCO &gt; 50% corrected for hemoglobin) 4.1.6. Serum creatinine &lt; 1.5 mg/dL or creatinine clearance &gt; 50 ml/min for those above serum creatinine of 1.5; serum bilirubin &lt; 2.0 mg/dL; ALT &lt; 2x ULN (unless secondary to disease) 4.1.7. Females of childbearing potential must have a negative serum or urine beta-HCG test within three weeks of registration. Additionally, patients will be required to take adequate contraceptive measures. 4.1.8. No prior cancer within five years with the exception of surgically cured non-melanoma skin cancer or in situ cancer of the cervix 4.1.9. No prior myeloablative therapy or transplant 4.1.10. The recipient and/or the recipient's legal guardian must have been informed of the investigational nature of this study and have signed a consent form which is in accordance with Federal guidelines and the guidelines of the Stanford IRB. 4.3. Donor Inclusion Criteria The donor must be examined and have specific tests performed according to existing institutional guidelines to evaluate his/her candidacy as a donor including the following: 4.3.1. Age &lt; 60 years and weight greater than 25 kg. 4.3.2. Medical history and physical examination confirm good health status as defined by institutional standards 4.3.3. Seronegative for HIV Ag, HIV 1+2 Ab, HTLV I/II Ab, HBsAg, HBcAb (IgM and IgG), HCV Ab, RPR for syphilis within 30 days of apheresis collection 4.3.4. Genotypically haploidentical as determined by HLA typing 4.3.5. Female donors of child-bearing potential must have a negative serum or urine beta-HCG test within three weeks of mobilization 4.3.6. Capable of undergoing leukapheresis, have adequate venous access, and be willing to undergo insertion of a central catheter should leukapheresis via peripheral vein be inadequate 4.3.7. Agreeable to second donation of PBPC (or a bone marrow harvest) should the patient fail to demonstrate sustained engraftment following the transplant. 4.3.8. The donor, or legal guardian greater than 18 years of age, must have been informed of the investigational nature of this study and have signed a consent form in accordance with Federal Guidelines and the guidelines of the Stanford IRB. 4.3.9. The prospective donor will be screened for CMV seroreactivity and a seronegative donor will be utilized if available when the patient is seronegative. Otherwise the donor will be selected on the ability of NK cell alloreactivity based upon HLA typing results and donors who are capable of NK cell alloreactivity will be used preferentially.</has_content>
+          </Sentence>
+        </occurs_in_sentence>
+        <hasMutation_Label>t(4:11)</hasMutation_Label>
+      </Translocation>
+    </contains_mutation>
+    <contains_mutation>
+      <Translocation rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_19">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_incl_nct00185679"/>
+        <occurs_in_sentence rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence2"/>
+        <hasMutation_Label>t(9;22)</hasMutation_Label>
+      </Translocation>
+    </contains_mutation>
+    <contains_mutation>
+      <Translocation rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_18">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_incl_nct00185679"/>
+        <occurs_in_sentence rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence1"/>
+        <hasMutation_Label>t(6;9)</hasMutation_Label>
+      </Translocation>
+    </contains_mutation>
+    <is_mutation_phrase_for>
+      <Inclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct00185679">
+        <belongs_to rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct00185679"/>
+        <has_crit_text> Inclusion Criteria:4.1. Recipient Inclusion Criteria 4.1.1. Male or female recipients must have histopathologically confirmed diagnosis of hematological or lymphatic malignancy in one of the following categories: 4.1.1.1. Acute myeloid leukemia (in relapse or primary refractory disease) 4.1.1.2. Acute leukemia (in first remission with poor risk factors and molecular prognosis; AML with~5,-7, t(6;9), tri8,~11 and ALL with Phil+ t(9;22),(q34;q11.2), and t(4:11)(q21;23) 4.1.1.3. Chronic myelogenous leukemia (accelerated, second chronic phase) 4.1.1.4. Myelodysplastic syndrome (in high and high intermediate risk categories) 4.1.1.5. Non-Hodgkin's lymphoma ) 4.1.1.6. Refractory CLL 4.1.2. The recipient must be &lt; 50 years old at time of registration. 4.1.3. The recipient must have a related donor genotypically HLA-A, B,C and DRB1, DQ loci haploidentical to the recipient (but differing for 2-3 HLA alleles on the unshared haplotype in the GvHD direction) and no HLA matched sibling or matched unrelated donor is identified. 4.1.4. Recovery from prior therapy, chemotherapy, or radiotherapy, as defined by: 4.1.4.1. ECOG performance status &lt; 2 4.1.5. Adequate cardiac and pulmonary function (LVEF &gt; 45%, DLCO &gt; 50% corrected for hemoglobin) 4.1.6. Serum creatinine &lt; 1.5 mg/dL or creatinine clearance &gt; 50 ml/min for those above serum creatinine of 1.5; serum bilirubin &lt; 2.0 mg/dL; ALT &lt; 2x ULN (unless secondary to disease) 4.1.7. Females of childbearing potential must have a negative serum or urine beta-HCG test within three weeks of registration. Additionally, patients will be required to take adequate contraceptive measures. 4.1.8. No prior cancer within five years with the exception of surgically cured non-melanoma skin cancer or in situ cancer of the cervix 4.1.9. No prior myeloablative therapy or transplant 4.1.10. The recipient and/or the recipient's legal guardian must have been informed of the investigational nature of this study and have signed a consent form which is in accordance with Federal guidelines and the guidelines of the Stanford IRB. 4.3. Donor Inclusion Criteria The donor must be examined and have specific tests performed according to existing institutional guidelines to evaluate his/her candidacy as a donor including the following: 4.3.1. Age &lt; 60 years and weight greater than 25 kg. 4.3.2. Medical history and physical examination confirm good health status as defined by institutional standards 4.3.3. Seronegative for HIV Ag, HIV 1+2 Ab, HTLV I/II Ab, HBsAg, HBcAb (IgM and IgG), HCV Ab, RPR for syphilis within 30 days of apheresis collection 4.3.4. Genotypically haploidentical as determined by HLA typing 4.3.5. Female donors of child-bearing potential must have a negative serum or urine beta-HCG test within three weeks of mobilization 4.3.6. Capable of undergoing leukapheresis, have adequate venous access, and be willing to undergo insertion of a central catheter should leukapheresis via peripheral vein be inadequate 4.3.7. Agreeable to second donation of PBPC (or a bone marrow harvest) should the patient fail to demonstrate sustained engraftment following the transplant. 4.3.8. The donor, or legal guardian greater than 18 years of age, must have been informed of the investigational nature of this study and have signed a consent form in accordance with Federal Guidelines and the guidelines of the Stanford IRB. 4.3.9. The prospective donor will be screened for CMV seroreactivity and a seronegative donor will be utilized if available when the patient is seronegative. Otherwise the donor will be selected on the ability of NK cell alloreactivity based upon HLA typing results and donors who are capable of NK cell alloreactivity will be used preferentially.</has_crit_text>
+        <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct00185679</has_critID>
+      </Inclusion_Criteria>
+    </is_mutation_phrase_for>
+  </Mutation_Phrase>
+  <Mutation_Phrase rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_incl_nct01575691">
+    <contains_mutation>
+      <Inversion rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#INV_6">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_incl_nct01575691"/>
+        <occurs_in_sentence>
+          <Sentence rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence9">
+            <occurs_in_doc>
+              <Document rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Doc_nct01575691">
+                <has_Path>C:\Users\m128320\Documents\Research\LinkedCTWithMutationMentions\LeukemiaTrials\Trial_100.txt</has_Path>
+              </Document>
+            </occurs_in_doc>
+            <has_content> Patients with relapsed /refractory disease with inv16, t(8;21) or t(15;17) are eligible.</has_content>
+          </Sentence>
+        </occurs_in_sentence>
+        <hasMutation_Label>inv16</hasMutation_Label>
+      </Inversion>
+    </contains_mutation>
+    <contains_mutation>
+      <Translocation rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_5">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_incl_nct01575691"/>
+        <occurs_in_sentence rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence9"/>
+        <hasMutation_Label>t(15;17) </hasMutation_Label>
+      </Translocation>
+    </contains_mutation>
+    <contains_mutation>
+      <Translocation rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_4">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_incl_nct01575691"/>
+        <occurs_in_sentence rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence9"/>
+        <hasMutation_Label>t(8;21) </hasMutation_Label>
+      </Translocation>
+    </contains_mutation>
+    <is_mutation_phrase_for>
+      <Inclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct01575691">
+        <belongs_to>
+          <Trial rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct01575691">
+            <hasLinkedCT_URI>http://data.linkedct.org/data/trial/nct01575691</hasLinkedCT_URI>
+          </Trial>
+        </belongs_to>
+        <has_crit_text> Inclusion Criteria: ~ Patients with refractory or relapsed: acute myelogenous leukemia (AML), and myelodysplastic syndrome (MDS) (bone marrow blasts &gt; or = 10%) are eligible. ~ Untreated patients older than 60 years of age with AML or MDS (bone marrow blasts &gt; or = 10%) who refuse or are not eligible for front-line chemotherapy, are eligible. ~ Performance status of &lt; or = 2 by the Eastern Cooperative Oncology Group (ECOG) scale. ~ Signed informed consent indicating that patients are aware of the investigational nature of this study in keeping with the policies of University of Texas M D Anderson Cancer Center (UTMDACC). ~ Age &gt; 2 years. Valproic acid has been associated with a higher rate of severe liver toxicity in children younger than 2 years. ~ Patients must have been off chemotherapy for 2 weeks prior to entering this study and recovered from the toxic effects of that therapy, unless there is evidence of rapidly progressive disease. Use of hydroxyurea for patients with rapidly proliferative disease is allowed for the first two weeks on therapy. ~ Adequate liver function (bilirubin of &lt; 2mg/dL, SGPT &lt; 3 * Upper Limits of Normal (ULN)) and renal function (creatinine &lt; 2mg/dL). ~ Women of childbearing potential must practice contraception. Men and women must continue birth control for the duration of the trial. ~ Patients with relapsed /refractory disease with inv16, t(8;21) or t(15;17) are eligible.</has_crit_text>
+        <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct01575691</has_critID>
+      </Inclusion_Criteria>
+    </is_mutation_phrase_for>
+  </Mutation_Phrase>
+  <Mutation_Phrase rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_excl_nct00853008">
+    <contains_mutation>
+      <Translocation rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_3">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_excl_nct00853008"/>
+        <occurs_in_sentence rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence1"/>
+        <hasMutation_Label>t(8;22)</hasMutation_Label>
+      </Translocation>
+    </contains_mutation>
+    <contains_mutation>
+      <Translocation rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_2">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_excl_nct00853008"/>
+        <occurs_in_sentence rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence1"/>
+        <hasMutation_Label>t(2;8)</hasMutation_Label>
+      </Translocation>
+    </contains_mutation>
+    <contains_mutation>
+      <Translocation rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_1">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_excl_nct00853008"/>
+        <occurs_in_sentence rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence1"/>
+        <hasMutation_Label>t(8;14)</hasMutation_Label>
+      </Translocation>
+    </contains_mutation>
+    <is_mutation_phrase_for>
+      <Exclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct00853008">
+        <belongs_to rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct00853008"/>
+        <has_crit_text> Exclusion Criteria: ~ L3 ALL or B mature(sIg +) or t(8;14), t(2;8), t(8;22). ~ ALL Ph (BCR/ABL) positive. ~ Bifenotipics ALL as EGIL criteria. ~ Indifferentiated ALL. ~ Patients with cardiac pathology ~ Patients with chronic liver disease in activity fase ~ Pulmonary disease ~ Renal insufficiency not due to ALL ~ Neurological disorders not due to ALL ~ PS (grades 3 and 4) not due to ALL. </has_crit_text>
+        <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct00853008</has_critID>
+      </Exclusion_Criteria>
+    </is_mutation_phrase_for>
+  </Mutation_Phrase>
+  <Mutation_Phrase rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_excl_nct01575691">
+    <contains_mutation>
+      <Inversion rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#INV_9">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_excl_nct01575691"/>
+        <occurs_in_sentence>
+          <Sentence rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence5">
+            <occurs_in_doc rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Doc_nct01575691"/>
+            <has_content> Patients with untreated disease inv16, t(8;21) or t(15;17) will be excluded. </has_content>
+          </Sentence>
+        </occurs_in_sentence>
+        <hasMutation_Label>inv16</hasMutation_Label>
+      </Inversion>
+    </contains_mutation>
+    <contains_mutation>
+      <Translocation rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_8">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_excl_nct01575691"/>
+        <occurs_in_sentence rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence5"/>
+        <hasMutation_Label>t(15;17) </hasMutation_Label>
+      </Translocation>
+    </contains_mutation>
+    <contains_mutation>
+      <Translocation rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_7">
+        <is_contained_in rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_excl_nct01575691"/>
+        <occurs_in_sentence rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence5"/>
+        <hasMutation_Label>t(8;21) </hasMutation_Label>
+      </Translocation>
+    </contains_mutation>
+    <is_mutation_phrase_for>
+      <Exclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct01575691">
+        <belongs_to rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct01575691"/>
+        <has_crit_text> Exclusion Criteria: ~ Nursing and pregnant females are excluded. ~ Patients with active and uncontrolled infections are excluded. ~ Patients already receiving valproic acid or receiving other anticonvulsants will be excluded. ~ Untreated patients younger than 60 years will not be candidates for this study. ~ Patients with untreated disease inv16, t(8;21) or t(15;17) will be excluded. </has_crit_text>
+        <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#excl_nct01575691</has_critID>
+      </Exclusion_Criteria>
+    </is_mutation_phrase_for>
+  </Mutation_Phrase>
+  <Translocation rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_21">
+    <is_contained_in>
+      <Mutation_Phrase rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_incl_nct01066663">
+        <contains_mutation rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_21"/>
+        <is_mutation_phrase_for>
+          <Inclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct01066663">
+            <belongs_to rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct01066663"/>
+            <has_crit_text> Inclusion Criteria: ~ Diagnosed with CLL/SLL based on the standard histologic and immunophenotypic criteria described in the WHO classification of lymphoid malignancies, including immunophenotypic confirmation that the tumor cells co-express B cell antigens CD19/20 and CD5. Mantle cell lymphoma should be excluded based on positive staining of the tumor cells for CD23, or the absence of staining of the tumor cells for cyclin D1 or the absence of t(11;14). This diagnosis should be confirmed at a Dana-Farber/Harvard Cancer Center institution within approximately one month after the subject is registered. ~ Measurable disease, defined as lymphocytosis &gt; 5,000/uL, or at least one palpable or CT measurable lesion &gt; approximately 1.5cm, or bone marrow involvement &gt; approximately 30% ~ Relapsed after at least one prior purine analogue-containing regimen, or at least two non-purine analogue containing regimens ~ 18 years of age or older ~ Life expectancy of greater than 3 months ~ ECOG performance status of 0, 1 or 2 ~ Normal organ function as outlined in the protocol ~ Require treatment based on IWCLL 2008 criteria ~ Women of child-bearing potential and men must agree to use adequate contraception prior to study entry and for the duration of study participation.</has_crit_text>
+            <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct01066663</has_critID>
+          </Inclusion_Criteria>
+        </is_mutation_phrase_for>
+      </Mutation_Phrase>
+    </is_contained_in>
+    <occurs_in_sentence rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence1"/>
+    <hasMutation_Label>t(11;14)</hasMutation_Label>
+  </Translocation>
+  <Translocation rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_0">
+    <is_contained_in>
+      <Mutation_Phrase rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#mutphrase_incl_nct00112723">
+        <contains_mutation rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#TRANS_0"/>
+        <is_mutation_phrase_for>
+          <Inclusion_Criteria rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct00112723">
+            <belongs_to rdf:resource="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#nct00112723"/>
+            <has_crit_text> Inclusion Criteria: ~ Diagnosis of 1 of the following hematologic malignancies: ~ Hodgkin's lymphoma ~ Non-Hodgkin's lymphoma (NHL) ~ Multiple myeloma ~ Patients in the phase II portion of the study are enrolled in 1 of the following strata according to diagnosis* ~ Stratum 1: Indolent B-cell NHL, follicle center B-cell NHL (grade 1, 2, or 3), marginal zone lymphoma, Waldenstrom's macroglobulinemia, or small lymphocytic lymphoma (without blood lymphocytosis at any point in the disease process) ~ Must have progressive lymphadenopathy, worsening cytopenias, or progressive symptoms attributed to lymphoma ~ Must require therapy, as determined by progressive anemia, thrombocytopenia, symptoms (e.g., fever, night sweats, weight loss, or fatigue), or progressive lymphadenopathy that causes discomfort ~ Received ? 2 prior therapies, including rituximab ~ Stratum 1a: Hairy cell leukemia ~ Must require therapy, as determined by progressive cytopenias or symptoms (fever, night sweats, weight loss, or fatigue) ~ Must have received ? 2 therapies ~ Stratum 2: Mantle cell lymphoma, as determined by the presence of cyclin D1 staining OR t(11;14) ~ Stratum 3: Intermediate grade B-cell NHL, including diffuse large B-cell NHL and T-cell rich B-cell NHL ~ Diffuse large B-cell NHL arising from an indolent NHL (i.e., transformed lymphoma) allowed ~ Ineligible for potentially curative autologous stem cell transplantation ~ Stratum 4: T-cell and natural killer-cell NHL, including anaplastic large cell lymphoma and peripheral T-cell NHL ~ Primary cutaneous lymphoma or Sezary syndrome allowed provided criteria for measurable disease are met ~ Received ? 1 prior systemic therapy ~ Stratum 5: Hodgkin's lymphoma ~ Any of the following subtypes are allowed: ~ Nodular sclerosing ~ Mixed cellularity ~ Lymphocyte predominant ~ Lymphocyte depleted ~ Ineligible for potentially curative autologous stem cell transplantation ~ Stratum 6: Progressive stage I or stage II or IIIA multiple myeloma meeting ? 1 major and 1 minor criterion OR ? 3 minor criteria as follows: ~ Major criteria ~ Plasmacytoma on tissue biopsy ~ Bone marrow plasmacytosis ? 30% of marrow cellularity ~ Monoclonal paraprotein ? 3,500 mg/dL (IgG), or ? 2,000 mg/dL (IgA), OR monoclonal protein (Bence-Jones protein) ? 1,000 mg by 24-hour urine collection ~ Minor criteria ~ Bone marrow plasmacytosis 10-29% of marrow cellularity ~ Monoclonal paraprotein &lt; 3,500 mg/dL (IgG) or &lt; 2,000 mg/dL (IgA) ~ Lytic bone lesions by x-ray or CT scan ~ Decrease in normal IgM (&lt; 50 mg/dL), IgA (&lt; 100 mg/dL), or IgG (&lt; 600 mg/dL) ~ Relapsed or refractory disease ~ Measurable disease, defined by 1 of the following: ~ At least 1 node &gt; 2 cm by CT scan ~ Measurable disease in a lymphoid structure (i.e., spleen) by CT scan ~ Bone marrow involvement (&gt; 20% of marrow cellularity) ~ Patients with multiple myeloma must have detectable serum or urinary paraprotein ~ Patients with only cutaneous or subcutaneous disease (i.e., no measurable lymph node or bone marrow disease) are eligible if the extent of rash or skin involvement OR the size of the nodules are measurable ~ Must have received ? 1 prior therapy ~ Steroids alone are not considered prior therapy for patients with NHL or Hodgkin's lymphoma ~ High-dose dexamethasone is considered 1 prior therapy for patients with multiple myeloma ~ No standard effective therapy exists ~ No HIV-associated lymphoma ~ No nonsecretory multiple myeloma ~ Performance status~ ECOG 0-2 ~ No concurrent hormonal therapy except steroids for new adrenal failure or hormones administered for non-disease-related conditions (e.g., insulin for diabetes) ~ Hemoglobin ? 9.0 g/dL* ~ Absolute neutrophil count ? 1,500/mm^3* ~ Platelet count ? 50,000/mm^3* ~ AST ? 3 times upper limit of normal (ULN) ~ Bilirubin ? 2 times ULN ~ No major renal dysfunction that would preclude study compliance or participation ~ Phase I: ~ Creatinine ? 1.5 mg/dL ~ Creatinine clearance ? 70 mL/min ~ Phase II: ~ Creatinine ? 2.0 mg/dL ~ Creatinine clearance ? 50 mL/min ~ No cardiac or vascular dysfunction that would preclude central venous access, vigorous hydration, or hemodialysis ~ No other major cardiac dysfunction that would preclude study compliance or participation ~ No major pulmonary dysfunction that would preclude study compliance or participation ~ Not pregnant or nursing ~ Negative pregnancy test ~ Fertile patients must use effective contraception ~ No chronic gastrointestinal disease (e.g., Crohn's disease, ulcerative colitis, or short gut syndrome) that would preclude study compliance or participation ~ No other major organ system (including neurological or psychiatric) dysfunction that would preclude study compliance or participation ~ Prior radiotherapy, including radioimmunotherapy, allowed ~ No concurrent radiotherapy ~ Prior idiotype vaccination or stem cell transplantation allowed ~ More than 6 weeks since prior mitomycin or nitrosoureas ~ No other concurrent chemotherapy ~ More than 4 weeks since other prior therapy ~ Prior systemic steroids allowed </has_crit_text>
+            <has_critID>http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#incl_nct00112723</has_critID>
+          </Inclusion_Criteria>
+        </is_mutation_phrase_for>
+      </Mutation_Phrase>
+    </is_contained_in>
+    <occurs_in_sentence>
+      <Sentence rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Sentence13">
+        <occurs_in_doc>
+          <Document rdf:about="http://www.semanticweb.org/sambhawa/ontologies/2014/6/Mutations_In_LinkedCT.owl#Doc_nct00112723">
+            <has_Path>C:\Users\m128320\Documents\Research\LinkedCTWithMutationMentions\LeukemiaTrials\Trial_0.txt</has_Path>
+          </Document>
+        </occurs_in_doc>
+        <has_content> Stratum 2: Mantle cell lymphoma, as determined by the presence of cyclin D1 staining OR t(11;14) </has_content>
+      </Sentence>
+    </occurs_in_sentence>
+    <hasMutation_Label>t(11;14) </hasMutation_Label>
+  </Translocation>
+</rdf:RDF>
