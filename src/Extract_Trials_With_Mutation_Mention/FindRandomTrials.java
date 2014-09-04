@@ -16,17 +16,19 @@ import java.util.Set;
 
 //read the file with trials output and select 50 random trials
 public class FindRandomTrials {
+	
+	static int startLine= 1;
+	static int endLine= 397;
 
 	public static void main(String[] args) {
 		
-		int startLine= 1;
-		int endLine= 397;
+		
 		
 		ArrayList<Integer> lineNumber= new ArrayList<Integer>();
 		StringBuilder sb = new StringBuilder(); 
 		Random rand = new Random();
 		
-		//select random line number between 1 and 397. 
+		//select 40 random line numbers between 1 and 397. 
 		while(lineNumber.size()!=40){
 			int randomNumber = rand.nextInt(endLine)+startLine;		
 			
@@ -39,17 +41,16 @@ public class FindRandomTrials {
 		//sort the arraylist 
 		Collections.sort(lineNumber);
 		
-		for(int ln:lineNumber){
-			System.out.println(ln+"\t");
-			
-		}
+//		for(int ln:lineNumber){
+//			System.out.println(ln+"\t");
+//			
+//		}
 		
 		
-		
-		  try {
+		 try {
 		
 			// LineNumberReader extends BufferedReader
-			LineNumberReader rdr = new LineNumberReader(new FileReader("C:\\Users\\m128320\\Documents\\Research\\LinkedCTWithMutationMentions\\logMutationWordsSpan_withWS.txt")); 
+			LineNumberReader rdr = new LineNumberReader(new FileReader("C:\\myprojects\\Mayo_Internship_2014\\Research\\LinkedCTWithMutationMentions\\logMutationWordsSpan_withWS.txt")); 
 					
 			String line;
 			int count=0;
