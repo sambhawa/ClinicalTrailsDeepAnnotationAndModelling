@@ -161,13 +161,13 @@ public class ExtractMutationsFromCriteria {
 			//patterns - v.0.0.0
 */			
 			//patterns - v.0.0.1
-			patterns.add(Pattern.compile("t[\\s]*\\(([1-9]|1[0-9]|2[0-2])(;)?(:)?([1-9]|1[0-9]|2[0-2])\\)[\\s]*(\\([qp][0-9][0-9](.[1-9])?(;)?[qp][0-9][0-9]\\))?",Pattern.CASE_INSENSITIVE));// for translocation
+			patterns.add(Pattern.compile("t[\\s]*(\\()?(\\[)?([1-9]|1[0-9]|2[0-2])[\\s]*(;)?(:)?[\\s]*([1-9]|1[0-9]|2[0-2])\\)[\\s]*(\\([qp][0-9][0-9](.[1-9])?[\\s]*(;)?[\\s]*[qp][0-9][0-9]\\))?"));// for translocation
 			patterns.add(Pattern.compile("del[\\s]*\\([0-9][0-9]?[pq]\\)",Pattern.CASE_INSENSITIVE)); // for deletions
-			patterns.add(Pattern.compile("inv[\\s]*(\\()?[0-9][0-9](\\))?(\\([pq][0-9][0-9](.[1-9])?(;)?[qp][0-9][0-9]\\))?",Pattern.CASE_INSENSITIVE)); // for inversions
+			patterns.add(Pattern.compile("(inv|inversion)[\\s]*[\\.]*(\\()?[0-9][0-9](\\))?(\\([pq][0-9][0-9](.[1-9])?(;)?[qp][0-9][0-9]\\))?",Pattern.CASE_INSENSITIVE)); // for inversions
 			patterns.add(Pattern.compile("11q23",Pattern.CASE_INSENSITIVE));
-			patterns.add(Pattern.compile("[-\\+][0-9][0-9]/[0-9][0-9][qp]-",Pattern.CASE_INSENSITIVE));
-			patterns.add(Pattern.compile("[0-9][0-9][qp]-",Pattern.CASE_INSENSITIVE));
-			patterns.add(Pattern.compile("t[0-9][0-9]",Pattern.CASE_INSENSITIVE));
+			patterns.add(Pattern.compile("[-\\+]([1-9]|1[0-9])/([1-9]|1[0-9])[qp]-",Pattern.CASE_INSENSITIVE));
+			patterns.add(Pattern.compile("([1-9]|1[0-9])[qp]-",Pattern.CASE_INSENSITIVE));
+			patterns.add(Pattern.compile("t([1-9][0-9]?[^;[1-9][0-9]?])"));
 			//patterns - v0.0.1
 			
 			
