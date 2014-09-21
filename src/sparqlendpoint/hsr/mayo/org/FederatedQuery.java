@@ -58,14 +58,14 @@ public class FederatedQuery {
 							 "      ?criteria mutCT:belongs_to ?trial. \n" +
 							 "      ?trial mutCT:hasLinkedCT_URI \"http://data.linkedct.org/data/trial/nct00932412\".\n"+
 							 
-							 "		SERVICE <http://4store.mayo.edu:8080/sparql/?soft-limit=-1> { \n"+
+							 /*"		SERVICE <http://4store.mayo.edu:8080/sparql/?soft-limit=-1> { \n"+
 							 "		?trial_ct linkedct:id_info_nct_id  \"NCT00932412\". \n"+
 							 "		?trial_ct linkedct:trial_condition ?cond.\n"+
 							 "		?cond rdfs:label ?cond_label.\n"+
 							 "		?trial_ct linkedct:brief_title ?trial_title. \n"+
 							 "		?trial_ct linkedct:trial_intervention ?interv. \n"+
 							 "		?interv rdfs:label ?interv_label. \n"+
-							 "		?trial_ct linkedct:overall_status ?status } \n"+
+							 "		?trial_ct linkedct:overall_status ?status } \n"+*/
 							 "      }";
 		
 		//System.out.println(queryString);

@@ -25,6 +25,7 @@ public class EligCritHandlerToFilterTrials extends DefaultHandler {
 	BufferedWriter bufferedWriter = null;
 	BufferedWriter logWriter;
 	private int countCT=0;
+	static int countMatches = 0;
 
 	public void startDocument() throws SAXException {
 
@@ -33,11 +34,11 @@ public class EligCritHandlerToFilterTrials extends DefaultHandler {
 
 			bufferedWriter = new BufferedWriter(
 					new FileWriter(
-							"C:\\Users\\m128320\\Documents\\Research\\LinkedCTWithMutationMentions\\Leukemia_mutation_filtered_trials_withWhiteSpace.txt"));//for filtered trials
+							"C:\\myprojects\\Mayo_Internship_2014\\Research\\Research\\LinkedCTWithMutationMentions\\Updated_Leukemia_mutation_filtered_trials_withWhiteSpace.txt"));//for filtered trials
 
 			logWriter = new BufferedWriter(
 					new FileWriter(
-							"C:\\Users\\m128320\\Documents\\Research\\LinkedCTWithMutationMentions\\logMutationWordsSpan_withWS.txt")); //for logs
+							"C:\\myprojects\\Mayo_Internship_2014\\Research\\Research\\LinkedCTWithMutationMentions\\Updated_logMutationWordsSpan_withWS.txt")); //for logs
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -103,14 +104,16 @@ public class EligCritHandlerToFilterTrials extends DefaultHandler {
 			 
 			// first put the criteria in one line, period separated, remove
 			// newlines to get correct char offset of matches.
-			String noSpecChar = crit_full2.toString().replaceAll("\\n","#").replaceAll("( )+", " ")/*.replaceAll("\\n-","#")*/;
+			//String noSpecChar = crit_full2.toString().replaceAll("\\n","#").replaceAll("( )+", " ")/*.replaceAll("\\n-","#")*/;
 
+			String noSpecChar=crit_full2.toString().replaceAll("\\s-","~").replaceAll("\\n", "").replaceAll("( )+", " ").replaceAll("(\\.)+",".");
 			// check if any mutation pattern is found
-			foundMatch = findMutationMentions(noSpecChar);
+			foundMatch = (findStrAbn(noSpecChar)||findOtherMutMentions(noSpecChar)); //if anytype of mutation detected by our rule-based system. 
 			try {	
 			if (foundMatch) {
 				
 					countCT++;
+					logWriter.newLine();
 					
 					bufferedWriter.write("\t" + crit_full2); //output the criteria
 					bufferedWriter.newLine();
@@ -177,6 +180,8 @@ public class EligCritHandlerToFilterTrials extends DefaultHandler {
 			}
 		}
 	}
+	
+	
 
 	public void characters(char ch[], int start, int length)
 			throws SAXException {
@@ -195,6 +200,7 @@ public class EligCritHandlerToFilterTrials extends DefaultHandler {
 		// Always close files.
 		try {
 			logWriter.write("Total number of trials with mutation mentions: "+countCT);
+			logWriter.write("Total number of mutations: "+countMatches);
 			bufferedWriter.close();
 			logWriter.close();
 		} catch (IOException e) {
@@ -202,5 +208,143 @@ public class EligCritHandlerToFilterTrials extends DefaultHandler {
 			e.printStackTrace();
 		}
 	}
+	
+	
+	
+	// check for different mutation patterns for a given line of incl or excl criteria and o/p: trialID,i/e,mut_label [,context]
+		public boolean findStrAbn(String crit_line) {
+			boolean matchFound = false;
+
+			
+			try {
+
+				ArrayList<Pattern> patterns = new ArrayList<Pattern>();
+				
+				//encode regex for capturing different types of mutation mentions
+				
+				/*//patterns - v.0.0.0
+				patterns.add(Pattern.compile("t[\\s]*\\(([1-9]|1[0-9]|2[0-2])(;)?(:)?([1-9]|1[0-9]|2[0-2])\\)[\\s]*(\\([qp][0-9][0-9](.[1-9])?(;)?[qp][0-9][0-9]\\))?",Pattern.CASE_INSENSITIVE));// for translocation
+				patterns.add(Pattern.compile("del[\\s]*\\([0-9][0-9]?[pq]\\)",Pattern.CASE_INSENSITIVE)); // for deletions
+				patterns.add(Pattern.compile("inv[\\s]*(\\()?[0-9][0-9](\\))?(\\([pq][0-9][0-9](.[1-9])?(;)?[qp][0-9][0-9]\\))?",Pattern.CASE_INSENSITIVE)); // for inversions
+				//patterns - v.0.0.0
+	*/			
+				//patterns - v.0.0.1
+				patterns.add(Pattern.compile("t[\\s]*(\\()?(\\[)?([1-9]|1[0-9]|2[0-2])[\\s]*(;)?(:)?[\\s]*([1-9]|1[0-9]|2[0-2])\\)[\\s]*(\\([qp][0-9][0-9](.[1-9])?[\\s]*(;)?[\\s]*[qp][0-9][0-9]\\))?"));// for translocation
+				patterns.add(Pattern.compile("del[\\s]*\\([0-9][0-9]?[pq]\\)",Pattern.CASE_INSENSITIVE)); // for deletions
+				patterns.add(Pattern.compile("(inv|inversion)[\\s]*[\\.]*(\\()?(1[0-9])(\\))?(\\([pq][0-9][0-9](.[1-9])?(;)?[qp][0-9][0-9]\\))?",Pattern.CASE_INSENSITIVE)); // for inversions
+				patterns.add(Pattern.compile("11q23",Pattern.CASE_INSENSITIVE));
+				patterns.add(Pattern.compile("[-\\+]([1-9]|1[0-9])/([1-9]|1[0-9])[qp]-",Pattern.CASE_INSENSITIVE));
+				patterns.add(Pattern.compile("([1-9]|1[0-9])[qp]-",Pattern.CASE_INSENSITIVE));
+				patterns.add(Pattern.compile("t([1-9][0-9]?[^;[1-9][0-9]?])"));
+				//patterns - v0.0.1
+				
+				
+				Matcher matcher;
+				for (Pattern p : patterns) {
+					matcher = p.matcher(crit_line);
+					while (matcher.find()) {
+						if(matchFound==false) matchFound = true; //set the flag if any pattern match is found
+						
+						//output trialID only if match is found
+						countMatches++;
+						writeTrailIDToFile(trialID); //writes to both logfile and output file
+						trialID.delete(0, trialID.length());
+						logWriter.write("\t"+matcher.group()); //for the current trial, log the matching mutation mention and its span as character offset
+					}
+					
+				}
+				
+				//if(matchFound)
+					//logWriter.newLine(); // all mutation mentions for the current trial's elig criteria are found, hence new line
+				
+				logWriter.flush();
+
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+			return matchFound;
+			
+		}
+		
+		
+		public boolean findOtherMutMentions(String crit_line) {
+			boolean matchFound = false;
+
+			
+			try {
+
+				ArrayList<Pattern> patterns = new ArrayList<Pattern>();
+				
+				
+				//other-mutation mentions (phrases, protein mutations)
+				//1. PML(-)?(/)?RAR(A)?(\s)?(\?)?
+				//2. CBF(\?)?(B)?(/|-)?(\s)*(MYH11|SMMHC)
+				//3. BCR(/|-)ABL
+				//4. FLT3(-|/)ITD
+				patterns.add(Pattern.compile("PML(-)?(/)?RAR(A)?(\\s)?(\\?)?",Pattern.CASE_INSENSITIVE));
+				patterns.add(Pattern.compile("CBF(\\?)?(B)?(/|-)?(\\s)*(MYH11|SMMHC)",Pattern.CASE_INSENSITIVE));
+				patterns.add(Pattern.compile("BCR(/|-)ABL",Pattern.CASE_INSENSITIVE));
+				patterns.add(Pattern.compile("FLT3(-|/)ITD",Pattern.CASE_INSENSITIVE));
+						
+				//------------------Phrases-----------------
+				//5. FLT3(-)?(\s)?(mutation(s)?|abnormalities)
+				//6. chromosome(\s)*[1-9](,(\s)*([1-9][0-9]?))*(\s)*abnormalit(y|ies)
+				//7. abnormalities of [1-9](,(x\s)*([1-9][0-9]?))*
+				//8. abnormal(\s)*((,)?(\s)*([1-9]|1[0-9]|2[0-2])[pq]?)+
+				//9. abnormal(\s)*((,)?(\s)*([1-9]|1[0-9]|2[0-2])[pq]?)*
+				//10. complex(\s)*(karyotype(s)?|cytogenetics)
+				//11. tri(somy)?(\s)*([1-9]|1[0-9]|2[0-3])
+				//12. hypodiploid(y)?
+				//14. monosomy(\s)*([1-9]|1[0-9])?
+				//15. MLL(\s)*(gene)?(\s)*(rearrangement(s)?|translocation)
+				//16. philadelphia(\s)*(-)?(chromosome|positive|negative)+
+				//17. AML(1)?(-|/)ETO
+				
+				patterns.add(Pattern.compile("FLT3(-)?(\\s)?(mutation(s)?|abnormalities)",Pattern.CASE_INSENSITIVE));
+				patterns.add(Pattern.compile("chromosome(\\s)*[1-9](,(\\s)*([1-9][0-9]?))*(\\s)*abnormalit(y|ies)",Pattern.CASE_INSENSITIVE));
+				patterns.add(Pattern.compile("abnormalities of [1-9](,(\\s)*([1-9][0-9]?))*",Pattern.CASE_INSENSITIVE));
+				patterns.add(Pattern.compile("abnormal(\\s)*((,)?(\\s)*([1-9]|1[0-9]|2[0-2])[pq]?)+",Pattern.CASE_INSENSITIVE));
+				patterns.add(Pattern.compile("complex(\\s)*(karyotype(s)?|cytogenetics)",Pattern.CASE_INSENSITIVE));
+				patterns.add(Pattern.compile("tri(somy)?(\\s)*([1-9]|1[0-9]|2[0-3])",Pattern.CASE_INSENSITIVE));
+				patterns.add(Pattern.compile("hypodiploid(y)?",Pattern.CASE_INSENSITIVE));
+				patterns.add(Pattern.compile("monosomy(\\s)*([1-9]|1[0-9])?",Pattern.CASE_INSENSITIVE));
+				patterns.add(Pattern.compile("MLL(\\s)*(gene)?(\\s)*(rearrangement(s)?|translocation)",Pattern.CASE_INSENSITIVE));
+				patterns.add(Pattern.compile("philadelphia(\\s)*(-)?(chromosome|positive|negative)+",Pattern.CASE_INSENSITIVE));	
+				patterns.add(Pattern.compile("AML(1)?(-|/)ETO",Pattern.CASE_INSENSITIVE));
+				//mutation phrases
+				
+				
+				Matcher matcher;
+				
+				for (Pattern p : patterns) {
+					matcher = p.matcher(crit_line);
+					while (matcher.find()) {
+						if(matchFound==false) matchFound = true; //set the flag if any pattern match is found
+						
+						//output trialID only if match is found
+						//writeTrailIDToFile(trialID); //writes to both logfile and output file
+						//trialID.delete(0, trialID.length());
+						countMatches++;
+						logWriter.write("\t"+matcher.group()); //for the current trial, log the matching mutation mention and its span as character offset
+					}
+					
+				}
+				
+				//if(matchFound)
+					//logWriter.newLine(); // all mutation mentions for the current trial's elig criteria are found, hence new line
+				
+					
+				
+				logWriter.flush();
+
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+			return matchFound;
+		}
 
 }

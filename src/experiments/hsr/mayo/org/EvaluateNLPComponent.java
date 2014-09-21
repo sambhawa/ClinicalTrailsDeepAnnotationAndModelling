@@ -27,8 +27,11 @@ public class EvaluateNLPComponent {
 	static Map<String,Set<String>> mutationMapGT = new HashMap<String, Set<String>>();
 	static Map<String,Set<String>> mutationMapOP = new HashMap<String, Set<String>>();
 	
+	static int countTP;
+	
 	public static void main(String[] args) {
 		
+		System.out.println("This works");
 		if(args.length<3){
 			System.out.println("Please pass file path for ground truth, file path for output file and mutation category as arguments. Rerun.");
 			System.exit(-1);
@@ -36,10 +39,12 @@ public class EvaluateNLPComponent {
 		
 		String file1 = args[0];
 		String file2 = args[1];
+		System.out.println("GT:"+file1);
+		System.out.println("OP:"+file2);
 		
 		//Step 1: pass Ground truth and system-output paths and find diff for various types of mutation types: structural-abnormality (words), point-mutations(word), 
 		//mutation phrases (sentence-level)
-		if(args[2]=="s")
+		
 		findDiffStrAbn(file1,file2);
 		
 		
@@ -55,17 +60,21 @@ public class EvaluateNLPComponent {
 		//5. count matches
 		
 		int countMutationsINGT = parseFileToCreateMap(file1,mutationMapGT);
-		int countMutationsINOP = parseFileToCreateMap(file1,mutationMapOP);
+		int countMutationsINOP = parseFileToCreateMap(file2,mutationMapOP);
 		
 		System.out.println("count of mutations in GT: "+countMutationsINGT);
 		System.out.println("count of mutations in OP: "+countMutationsINOP);
 		
 		//compute difference between each set
 		int GTminuOP = computeDiffSets(mutationMapGT,mutationMapOP);
-		int OPminuGT = computeDiffSets(mutationMapGT,mutationMapOP);
+		System.out.println("GT - OP= "+GTminuOP);
 		
-		System.out.println("GT - OP"+GTminuOP);
-		System.out.println("OP - GT"+OPminuGT);
+		System.out.println("=======================================================");
+		
+		int OPminuGT = computeDiffSets(mutationMapOP,mutationMapGT);
+		System.out.println("OP - GT= "+OPminuGT);
+		
+		System.out.println("TP:"+ countTP+" FP: "+OPminuGT+" FN: "+GTminuOP);
 		
 	}
 
@@ -86,14 +95,20 @@ public class EvaluateNLPComponent {
 			   Set<String> diffSet = new HashSet<String>(mutationSet1);
 			   diffSet.removeAll(mutationSet2);
 			   
-			   if(diffSet.size()==0)System.out.println("Matched for:"+entry.getKey());
+			   if(diffSet.size()==0){
+				   countTP += mutationSet1.size();
+				   //System.out.println("Matched for:"+entry.getKey());
+				   }
+			   
 			   else {
 				  countDiff+=diffSet.size();
 				  //Iterating over HashSet using Iterator in Java
 			        Iterator<String> itr = diffSet.iterator();
+			        System.out.print(entry.getKey()+": ");
 			        while(itr.hasNext()){
-			            System.out.println(itr.next()+",");
+			            System.out.print(itr.next()+",");
 			        }
+			        System.out.println();
 			   }
 			   
 			   
@@ -115,6 +130,9 @@ public class EvaluateNLPComponent {
 			
 			String line;			
 			while((line=rdr.readLine())!=null){
+				
+				//clean up the output
+				//line.replaceAll(",,",",").replaceAll(",\r","").replaceAll("( )+", "");
 				
 				String[] wordArray = line.split(","); //comma is the seperator of tokens in both files
 				Set<String> mutationSet;

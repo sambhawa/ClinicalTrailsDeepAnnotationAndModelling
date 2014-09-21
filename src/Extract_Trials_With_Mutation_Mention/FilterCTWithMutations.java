@@ -99,7 +99,7 @@ public class FilterCTWithMutations{
 
        //saxParser.parse("C:\\Users\\m128320\\Documents\\Research\\MutationFinderExpt\\Elig_sample.xml", new EligCritHandlerToFilterTrials());
  
-	   saxParser.parse("C:\\Users\\m128320\\Documents\\Research\\sparql_results_linkedct\\Leukemia_1.xml", new EligCritHandlerToFilterTrials());
+	   saxParser.parse("C:\\myprojects\\Mayo_Internship_2014\\Research\\Research\\sparql_results_linkedct\\Leukemia_1.xml", new EligCritHandlerToFilterTrials());
 	
      }  catch(ParserConfigurationException e) {
     	 e.printStackTrace();
